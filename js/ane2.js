@@ -28,10 +28,10 @@ aneObj.prototype.init=function(){
     //3.4:初始化摆动幅度
     this.amp[i]=20+Math.random()*20;
   }
-  console.log(this.rootx);
-  console.log(this.headx);
-  console.log(this.heady);
-  console.log(this.amp);
+  // console.log(this.rootx);
+  // console.log(this.headx);
+  // console.log(this.heady);
+  // console.log(this.amp);
 }
 //4:为构造函数添加函数draw
 aneObj.prototype.draw=function(){
@@ -58,7 +58,6 @@ aneObj.prototype.draw=function(){
     //4.10:描边
     ctx2.stroke();
   }
-  
   //4.10:恢复画笔2状态
   ctx2.restore();
 }

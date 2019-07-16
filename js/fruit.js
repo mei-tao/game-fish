@@ -42,11 +42,10 @@ fruitObj.prototype.init=function(){
     this.fruitType[i]=0;
     this.l[i]=0;
     this.spd[i]=0;
-
   }
-  console.log(this.alive);
-  console.log(this.x);
-  console.log(this.l);
+  // console.log(this.alive);
+  // console.log(this.x);
+  // console.log(this.l);
 
 }
 //4:为构造函数添加函数draw 绘制
@@ -95,7 +94,7 @@ function fruitMonitor(){
     if(fruit.alive[i]) sum++;
   }
   //7.2:如果小于15
-  console.log(sum)
+  //console.log(sum)
   if(sum<15){
     //7.3:挑一个
     sendFruit();
@@ -132,6 +131,5 @@ fruitObj.prototype.born=function(i){
   //9.6:出生时指定速度
   this.spd[i]=Math.random()*0.017+0.003
 }
-//
 
 
